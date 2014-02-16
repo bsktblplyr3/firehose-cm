@@ -21,7 +21,8 @@ class PicsController < ApplicationController
 
 #when you push save button, permits only blocks in parantheses to be uploaded to database
 	def pic_params
-	params.require(:pic).permit(:title, :message, :who)
+	params.require(:pic).permit(:title, 
+		:message, :who, :image)
 	end
 
 end

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FirehoseApp</title>
+  <title>UnforgettEvent</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -19,17 +19,18 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Firehose App</a>
+      <%=  link_to 'Go Home', root_path, 
+      :class =>'brand' %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       <ul class = "nav">
       		<li>
-      			<%= link_to 'Link1', '#' %>
+      			<%= link_to 'Local Events', pics_path %>
       		</li>
       		<li>
-      		<%= link_to 'Link2', '#'%>
+      		<%= link_to 'Send us Photos!', new_pic_path %>
       		</li>
 
       </ul>

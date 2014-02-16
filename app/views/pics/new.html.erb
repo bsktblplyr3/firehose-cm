@@ -1,9 +1,16 @@
-<div class ="ice-box span3">
-	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title%>
-		<%= f.input :message %>
-		<%= f.input :who %>
+<div class ="ice-box span6 offset3 text-center">
+	<h1 class="awesome sauce">
+	Share your Star Trek Gif
+	<h1>
+<br/>
 
-		<%= f.submit "Save"%>
+	<%= simple_form_for @pic do |f| %>
+		<%= f.input :title, label: 'Enter Your Title' , placeholder: 'e.g. Riker Claps, Borg is cool' %>
+		<%= f.input :message, label: 'What is going on?', placeholder: 'e.g. Pizza madness' %>
+		<%= f.input :who, label: 'Who is this?', placeholder: 'e.g. Justin Schaeffer' %>
+		<br/>
+		<%= f.input :image, label: 'Upload Your Photos'	 %>
+		<br/>
+		<%= f.submit "Save", :class => 'btn btn-success btn-large' %>
 	<%end%>
 </div>
