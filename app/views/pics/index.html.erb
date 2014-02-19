@@ -1,19 +1,19 @@
 	<% @pics.each do |pic| %>
 	<div class="ice-box span3 text-center"
 	>
-	<h2>
+	<h1>
 	<u>
 		<%= pic.title %>
 	</u>
-	</h2>
+	</h1>
 
-	<h3>
+	<h4>
 		<%= pic.message %>
-	</h3>
+	</h4>
 
-	<h3>
+	<h4>
 		<%= pic.who %>
-	</h3>
+	</h4>
 
 	<%= image_tag pic.image %>
 
