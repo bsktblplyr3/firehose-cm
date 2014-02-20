@@ -1,21 +1,23 @@
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&subset=latin' rel='stylesheet' type='text/css'>
+
 	<% @pics.each do |pic| %>
-	<div class="ice-box span3 text-center"
-	>
-	<h1>
-	<u>
+	<div class="span3 text-center">
+	<ul id = "notes">
+	<li>
+		<p>
 		<%= pic.title %>
-	</u>
-	</h1>
-
-	<h4>
+</p>
+<p>
 		<%= pic.message %>
-	</h4>
-
-	<h4>
+</p>
+	<p>
 		<%= pic.who %>
-	</h4>
+	</p>
 
 	<%= image_tag pic.image %>
+	</li>
+	</ul>
 
 	</div>
 	<% end %>
+

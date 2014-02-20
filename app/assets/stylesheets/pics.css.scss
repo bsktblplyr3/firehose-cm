@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+/*@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 .ice-box {
 	box-shadow: 2px -2px 2px 2px rgba(36,32,33,0.50);
@@ -37,4 +37,51 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+*/
+
+body {
+    background: url('newyorkcity.jpg') repeat center center fixed;
+}
+
+#notes li {
+    position: center;
+    width: 300px;
+    min-height: 100px;
+
+
+    margin: 25px auto;
+    padding: 60px 15px 15px 15px;
+    background: #fff url('') no-repeat 4px 8px;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    -webkit-transform: rotate(-.20deg); 
+    -moz-transform: rotate(-.20deg); 
+    -o-transform: rotate(-.20deg);     
+}
+
+#notes li p {
+    text-align: center;
+    font: normal normal normal 32px 'Reenie Beanie', Helvetica, Arial, sans-serif;
+    color: black;
+    text-shadow: white 1px 1px 0px;
+    overflow:hidden;
+}
+
+#notes li::before {
+    content: ' ';
+    display: block;
+    position: absolute; 
+    left: 115px;
+    top: -15px;
+    width: 75px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(243,245,228,0.5);
+    border: 2px solid rgba(255,255,255,0.5);
+    -webkit-transform: rotate(-6deg); 
+    -moz-transform: rotate(-6deg); 
+    -o-transform: rotate(-6deg); 
 }
