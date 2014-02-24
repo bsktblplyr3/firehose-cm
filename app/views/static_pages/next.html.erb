@@ -9,18 +9,92 @@
 	</h2>
 <form class="form-search">
 <input type="text" class="input-medium search-query">
-
 	<h2>
 	When are you free?
 	</h2>
-<form class="form-search">
-<input type="text" class="input-medium search-query">
+  <h2>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  </h2>
 
-	<h2>
-	Last but not least, what's your budget?
-	</h2>
-<form class="form-search">
+ <body>
+ 	   <h2>From:</h2> <div id="datetimepicker4" class="input-append date">
+      <input type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker4').datetimepicker({
+        format: 'MM/dd/yyyy',
+        language: 'en'
+      });
+    </script>
+</body>
+
+ <h2>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  </h2>
+
+ <body>
+ 	   <h2>Till:</h2> <div id="datetimepicker2" class="input-append date">
+      <input type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker2').datetimepicker({
+        format: 'MM/dd/yyyy',
+        language: 'en'
+      });
+    </script>
+</body>
+<!--<form class="form-search">
 <input type="text" class="input-medium search-query">
+-->
+	<h2>
+Filter By Price Interval:
+	</h2>
+<!--<form class="form-search">
+<input type="text" class="input-medium search-query">
+-->
+<%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, " $100-$500") %><br>
+<%= radio_button_tag(:age, "teen") %>
+<%= label_tag(:age_teen, " $501-$1000") %><br>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, " $1001-$1500") %><br>
+<%= radio_button_tag(:age, "boss") %>
+<%= label_tag(:age_boss, " $1501-$2000") %><br>
+
 
 
 
